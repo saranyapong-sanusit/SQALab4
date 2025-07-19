@@ -11,7 +11,7 @@ public class normalBoundary {
 
 	@ParameterizedTest
 	@CsvSource({
-			"1, 15, 500,Standard", "2, 15, 500,Standard", "50000, 15, 500,Gold", "99999, 15, 500,Gold",
+			"0, 15, 500,Standard", "1, 15, 500,Standard", "50000, 15, 500,Gold", "99999, 15, 500,Gold",
 			"100000, 15, 500,Gold", "50000,1,500,Standard", "50000,2,500,Silver", "50000,30,500,Gold", "50000,31,500,Gold",
 			"50000,15,1,Standard", "50000,15,2,Standard", "50000,15,999,Gold", "50000,15,1000,Gold" })
 	void normalBoundaryTesting(int purchaseTotal, int frequency, int pointCollected, String expectedRank) {
