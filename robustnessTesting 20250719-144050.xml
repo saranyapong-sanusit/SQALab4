@@ -1,199 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?><testrun name="robustnessTesting" project="MembershipRanking" tests="19" started="19" failures="11" errors="0" ignored="0">
-  <testsuite name="sqa.test.robustnessTesting" time="0.063" displayname="robustnessTesting" uniqueid="[engine:junit-jupiter]/[class:sqa.test.robustnessTesting]">
-    <testsuite name="testRobustness(sqa.test.robustnessTesting)" time="0.063" displayname="testRobustness(int, int, int, String)" parameters="int,int,int,java.lang.String" uniqueid="[engine:junit-jupiter]/[class:sqa.test.robustnessTesting]/[test-template:testRobustness(int, int, int, java.lang.String)]">
-      <testcase name="testRobustness" classname="sqa.test.robustnessTesting" time="0.063" dynamicTest="true" displayname="[1] -1, 4, 500, Standard" parameters="int,int,int,java.lang.String" uniqueid="[engine:junit-jupiter]/[class:sqa.test.robustnessTesting]/[test-template:testRobustness(int, int, int, java.lang.String)]/[test-template-invocation:#1]"/>
-      <testcase name="testRobustness" classname="sqa.test.robustnessTesting" time="0.001" dynamicTest="true" displayname="[2] 0, 4, 500, Standard" parameters="int,int,int,java.lang.String" uniqueid="[engine:junit-jupiter]/[class:sqa.test.robustnessTesting]/[test-template:testRobustness(int, int, int, java.lang.String)]/[test-template-invocation:#2]"/>
-      <testcase name="testRobustness" classname="sqa.test.robustnessTesting" time="0.001" dynamicTest="true" displayname="[3] 1, 4, 500, Standard" parameters="int,int,int,java.lang.String" uniqueid="[engine:junit-jupiter]/[class:sqa.test.robustnessTesting]/[test-template:testRobustness(int, int, int, java.lang.String)]/[test-template-invocation:#3]"/>
-      <testcase name="testRobustness" classname="sqa.test.robustnessTesting" time="0.011" dynamicTest="true" displayname="[4] 50000, 4, 500, Gold" parameters="int,int,int,java.lang.String" uniqueid="[engine:junit-jupiter]/[class:sqa.test.robustnessTesting]/[test-template:testRobustness(int, int, int, java.lang.String)]/[test-template-invocation:#4]">
+  <testsuite name="sqa.test.robustnessTesting" time="0.0" displayname="robustnessTesting" uniqueid="[engine:junit-jupiter]/[class:sqa.test.robustnessTesting]">
+    <testsuite name="RobustnessTesting(sqa.test.robustnessTesting)" time="0.0" displayname="RobustnessTesting(int, int, int, String)" parameters="int,int,int,java.lang.String" uniqueid="[engine:junit-jupiter]/[class:sqa.test.robustnessTesting]/[test-template:RobustnessTesting(int, int, int, java.lang.String)]">
+      <testcase name="RobustnessTesting" classname="sqa.test.robustnessTesting" time="0.0" dynamicTest="true" displayname="[1] -1, 15, 500, Out of bound" parameters="int,int,int,java.lang.String" uniqueid="[engine:junit-jupiter]/[class:sqa.test.robustnessTesting]/[test-template:RobustnessTesting(int, int, int, java.lang.String)]/[test-template-invocation:#1]">
         <failure>
-          <expected>Gold</expected>
-          <actual>Silver</actual>
-          org.opentest4j.AssertionFailedError: expected: &lt;Gold&gt; but was: &lt;Silver&gt;
-	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
-	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
-	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
-	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
-	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
-	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
-	at sqa.test.robustnessTesting.testRobustness(robustnessTesting.java:19)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at java.base/java.util.Optional.ifPresent(Optional.java:178)
-	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
-	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)
-	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
-	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)
-	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
-	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
-	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
-	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-
-
-        </failure>
-      </testcase>
-      <testcase name="testRobustness" classname="sqa.test.robustnessTesting" time="0.004" dynamicTest="true" displayname="[5] 99999, 4, 500, Gold" parameters="int,int,int,java.lang.String" uniqueid="[engine:junit-jupiter]/[class:sqa.test.robustnessTesting]/[test-template:testRobustness(int, int, int, java.lang.String)]/[test-template-invocation:#5]">
-        <failure>
-          <expected>Gold</expected>
-          <actual>Silver</actual>
-          org.opentest4j.AssertionFailedError: expected: &lt;Gold&gt; but was: &lt;Silver&gt;
-	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
-	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
-	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
-	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
-	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
-	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
-	at sqa.test.robustnessTesting.testRobustness(robustnessTesting.java:19)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at java.base/java.util.Optional.ifPresent(Optional.java:178)
-	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
-	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)
-	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
-	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)
-	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
-	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
-	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
-	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-
-
-        </failure>
-      </testcase>
-      <testcase name="testRobustness" classname="sqa.test.robustnessTesting" time="0.002" dynamicTest="true" displayname="[6] 100000, 4, 500, Gold" parameters="int,int,int,java.lang.String" uniqueid="[engine:junit-jupiter]/[class:sqa.test.robustnessTesting]/[test-template:testRobustness(int, int, int, java.lang.String)]/[test-template-invocation:#6]">
-        <failure>
-          <expected>Gold</expected>
-          <actual>Silver</actual>
-          org.opentest4j.AssertionFailedError: expected: &lt;Gold&gt; but was: &lt;Silver&gt;
-	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
-	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
-	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
-	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
-	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
-	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
-	at sqa.test.robustnessTesting.testRobustness(robustnessTesting.java:19)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at java.base/java.util.Optional.ifPresent(Optional.java:178)
-	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
-	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)
-	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
-	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)
-	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
-	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
-	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
-	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-
-
-        </failure>
-      </testcase>
-      <testcase name="testRobustness" classname="sqa.test.robustnessTesting" time="0.002" dynamicTest="true" displayname="[7] 100001, 4, 500, Gold" parameters="int,int,int,java.lang.String" uniqueid="[engine:junit-jupiter]/[class:sqa.test.robustnessTesting]/[test-template:testRobustness(int, int, int, java.lang.String)]/[test-template-invocation:#7]">
-        <failure>
-          <expected>Gold</expected>
-          <actual>Silver</actual>
-          org.opentest4j.AssertionFailedError: expected: &lt;Gold&gt; but was: &lt;Silver&gt;
-	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
-	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
-	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
-	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
-	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
-	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
-	at sqa.test.robustnessTesting.testRobustness(robustnessTesting.java:19)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at java.base/java.util.Optional.ifPresent(Optional.java:178)
-	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
-	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)
-	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
-	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)
-	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
-	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
-	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
-	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-
-
-        </failure>
-      </testcase>
-      <testcase name="testRobustness" classname="sqa.test.robustnessTesting" time="0.001" dynamicTest="true" displayname="[8] 50000, -1, 500, Standard" parameters="int,int,int,java.lang.String" uniqueid="[engine:junit-jupiter]/[class:sqa.test.robustnessTesting]/[test-template:testRobustness(int, int, int, java.lang.String)]/[test-template-invocation:#8]"/>
-      <testcase name="testRobustness" classname="sqa.test.robustnessTesting" time="0.001" dynamicTest="true" displayname="[9] 50000, 0, 500, Standard" parameters="int,int,int,java.lang.String" uniqueid="[engine:junit-jupiter]/[class:sqa.test.robustnessTesting]/[test-template:testRobustness(int, int, int, java.lang.String)]/[test-template-invocation:#9]"/>
-      <testcase name="testRobustness" classname="sqa.test.robustnessTesting" time="0.003" dynamicTest="true" displayname="[10] 50000, 1, 500, Silver" parameters="int,int,int,java.lang.String" uniqueid="[engine:junit-jupiter]/[class:sqa.test.robustnessTesting]/[test-template:testRobustness(int, int, int, java.lang.String)]/[test-template-invocation:#10]">
-        <failure>
-          <expected>Silver</expected>
+          <expected>Out of bound</expected>
           <actual>Standard</actual>
-          org.opentest4j.AssertionFailedError: expected: &lt;Silver&gt; but was: &lt;Standard&gt;
+          org.opentest4j.AssertionFailedError: expected: &lt;Out of bound&gt; but was: &lt;Standard&gt;
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
 	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
 	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
 	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
 	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
-	at sqa.test.robustnessTesting.testRobustness(robustnessTesting.java:19)
+	at sqa.test.robustnessTesting.RobustnessTesting(robustnessTesting.java:19)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at java.base/java.util.Optional.ifPresent(Optional.java:178)
 	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
@@ -226,7 +45,9 @@
 
         </failure>
       </testcase>
-      <testcase name="testRobustness" classname="sqa.test.robustnessTesting" time="0.003" dynamicTest="true" displayname="[11] 50000, 6, 500, Gold" parameters="int,int,int,java.lang.String" uniqueid="[engine:junit-jupiter]/[class:sqa.test.robustnessTesting]/[test-template:testRobustness(int, int, int, java.lang.String)]/[test-template-invocation:#11]">
+      <testcase name="RobustnessTesting" classname="sqa.test.robustnessTesting" time="0.0" dynamicTest="true" displayname="[2] 0, 15, 500, Standard" parameters="int,int,int,java.lang.String" uniqueid="[engine:junit-jupiter]/[class:sqa.test.robustnessTesting]/[test-template:RobustnessTesting(int, int, int, java.lang.String)]/[test-template-invocation:#2]"/>
+      <testcase name="RobustnessTesting" classname="sqa.test.robustnessTesting" time="0.0" dynamicTest="true" displayname="[3] 1, 15, 500, Standard" parameters="int,int,int,java.lang.String" uniqueid="[engine:junit-jupiter]/[class:sqa.test.robustnessTesting]/[test-template:RobustnessTesting(int, int, int, java.lang.String)]/[test-template-invocation:#3]"/>
+      <testcase name="RobustnessTesting" classname="sqa.test.robustnessTesting" time="0.0" dynamicTest="true" displayname="[4] 50000, 15, 500, Gold" parameters="int,int,int,java.lang.String" uniqueid="[engine:junit-jupiter]/[class:sqa.test.robustnessTesting]/[test-template:RobustnessTesting(int, int, int, java.lang.String)]/[test-template-invocation:#4]">
         <failure>
           <expected>Gold</expected>
           <actual>Silver</actual>
@@ -237,7 +58,7 @@
 	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
 	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
 	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
-	at sqa.test.robustnessTesting.testRobustness(robustnessTesting.java:19)
+	at sqa.test.robustnessTesting.RobustnessTesting(robustnessTesting.java:19)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at java.base/java.util.Optional.ifPresent(Optional.java:178)
 	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
@@ -270,7 +91,7 @@
 
         </failure>
       </testcase>
-      <testcase name="testRobustness" classname="sqa.test.robustnessTesting" time="0.002" dynamicTest="true" displayname="[12] 50000, 7, 500, Gold" parameters="int,int,int,java.lang.String" uniqueid="[engine:junit-jupiter]/[class:sqa.test.robustnessTesting]/[test-template:testRobustness(int, int, int, java.lang.String)]/[test-template-invocation:#12]">
+      <testcase name="RobustnessTesting" classname="sqa.test.robustnessTesting" time="0.002" dynamicTest="true" displayname="[5] 99999, 15, 500, Gold" parameters="int,int,int,java.lang.String" uniqueid="[engine:junit-jupiter]/[class:sqa.test.robustnessTesting]/[test-template:RobustnessTesting(int, int, int, java.lang.String)]/[test-template-invocation:#5]">
         <failure>
           <expected>Gold</expected>
           <actual>Silver</actual>
@@ -281,7 +102,7 @@
 	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
 	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
 	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
-	at sqa.test.robustnessTesting.testRobustness(robustnessTesting.java:19)
+	at sqa.test.robustnessTesting.RobustnessTesting(robustnessTesting.java:19)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at java.base/java.util.Optional.ifPresent(Optional.java:178)
 	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
@@ -314,7 +135,7 @@
 
         </failure>
       </testcase>
-      <testcase name="testRobustness" classname="sqa.test.robustnessTesting" time="0.002" dynamicTest="true" displayname="[13] 50000, 8, 500, Gold" parameters="int,int,int,java.lang.String" uniqueid="[engine:junit-jupiter]/[class:sqa.test.robustnessTesting]/[test-template:testRobustness(int, int, int, java.lang.String)]/[test-template-invocation:#13]">
+      <testcase name="RobustnessTesting" classname="sqa.test.robustnessTesting" time="0.002" dynamicTest="true" displayname="[6] 100000, 15, 500, Gold" parameters="int,int,int,java.lang.String" uniqueid="[engine:junit-jupiter]/[class:sqa.test.robustnessTesting]/[test-template:RobustnessTesting(int, int, int, java.lang.String)]/[test-template-invocation:#6]">
         <failure>
           <expected>Gold</expected>
           <actual>Silver</actual>
@@ -325,7 +146,7 @@
 	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
 	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
 	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
-	at sqa.test.robustnessTesting.testRobustness(robustnessTesting.java:19)
+	at sqa.test.robustnessTesting.RobustnessTesting(robustnessTesting.java:19)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at java.base/java.util.Optional.ifPresent(Optional.java:178)
 	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
@@ -358,10 +179,7 @@
 
         </failure>
       </testcase>
-      <testcase name="testRobustness" classname="sqa.test.robustnessTesting" time="0.001" dynamicTest="true" displayname="[14] 50000, 4, -1, Standard" parameters="int,int,int,java.lang.String" uniqueid="[engine:junit-jupiter]/[class:sqa.test.robustnessTesting]/[test-template:testRobustness(int, int, int, java.lang.String)]/[test-template-invocation:#14]"/>
-      <testcase name="testRobustness" classname="sqa.test.robustnessTesting" time="0.001" dynamicTest="true" displayname="[15] 50000, 4, 0, Standard" parameters="int,int,int,java.lang.String" uniqueid="[engine:junit-jupiter]/[class:sqa.test.robustnessTesting]/[test-template:testRobustness(int, int, int, java.lang.String)]/[test-template-invocation:#15]"/>
-      <testcase name="testRobustness" classname="sqa.test.robustnessTesting" time="0.001" dynamicTest="true" displayname="[16] 50000, 4, 1, Standard" parameters="int,int,int,java.lang.String" uniqueid="[engine:junit-jupiter]/[class:sqa.test.robustnessTesting]/[test-template:testRobustness(int, int, int, java.lang.String)]/[test-template-invocation:#16]"/>
-      <testcase name="testRobustness" classname="sqa.test.robustnessTesting" time="0.002" dynamicTest="true" displayname="[17] 50000, 4, 999, Gold" parameters="int,int,int,java.lang.String" uniqueid="[engine:junit-jupiter]/[class:sqa.test.robustnessTesting]/[test-template:testRobustness(int, int, int, java.lang.String)]/[test-template-invocation:#17]">
+      <testcase name="RobustnessTesting" classname="sqa.test.robustnessTesting" time="0.001" dynamicTest="true" displayname="[7] 100001, 15, 500, Gold" parameters="int,int,int,java.lang.String" uniqueid="[engine:junit-jupiter]/[class:sqa.test.robustnessTesting]/[test-template:RobustnessTesting(int, int, int, java.lang.String)]/[test-template-invocation:#7]">
         <failure>
           <expected>Gold</expected>
           <actual>Silver</actual>
@@ -372,7 +190,7 @@
 	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
 	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
 	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
-	at sqa.test.robustnessTesting.testRobustness(robustnessTesting.java:19)
+	at sqa.test.robustnessTesting.RobustnessTesting(robustnessTesting.java:19)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at java.base/java.util.Optional.ifPresent(Optional.java:178)
 	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
@@ -405,7 +223,10 @@
 
         </failure>
       </testcase>
-      <testcase name="testRobustness" classname="sqa.test.robustnessTesting" time="0.001" dynamicTest="true" displayname="[18] 50000, 4, 1000, Gold" parameters="int,int,int,java.lang.String" uniqueid="[engine:junit-jupiter]/[class:sqa.test.robustnessTesting]/[test-template:testRobustness(int, int, int, java.lang.String)]/[test-template-invocation:#18]">
+      <testcase name="RobustnessTesting" classname="sqa.test.robustnessTesting" time="0.001" dynamicTest="true" displayname="[8] 50000, 0, 500, Standard" parameters="int,int,int,java.lang.String" uniqueid="[engine:junit-jupiter]/[class:sqa.test.robustnessTesting]/[test-template:RobustnessTesting(int, int, int, java.lang.String)]/[test-template-invocation:#8]"/>
+      <testcase name="RobustnessTesting" classname="sqa.test.robustnessTesting" time="0.001" dynamicTest="true" displayname="[9] 50000, 1, 500, Standard" parameters="int,int,int,java.lang.String" uniqueid="[engine:junit-jupiter]/[class:sqa.test.robustnessTesting]/[test-template:RobustnessTesting(int, int, int, java.lang.String)]/[test-template-invocation:#9]"/>
+      <testcase name="RobustnessTesting" classname="sqa.test.robustnessTesting" time="0.001" dynamicTest="true" displayname="[10] 50000, 2, 500, Silver" parameters="int,int,int,java.lang.String" uniqueid="[engine:junit-jupiter]/[class:sqa.test.robustnessTesting]/[test-template:RobustnessTesting(int, int, int, java.lang.String)]/[test-template-invocation:#10]"/>
+      <testcase name="RobustnessTesting" classname="sqa.test.robustnessTesting" time="0.001" dynamicTest="true" displayname="[11] 50000, 30, 500, Gold" parameters="int,int,int,java.lang.String" uniqueid="[engine:junit-jupiter]/[class:sqa.test.robustnessTesting]/[test-template:RobustnessTesting(int, int, int, java.lang.String)]/[test-template-invocation:#11]">
         <failure>
           <expected>Gold</expected>
           <actual>Silver</actual>
@@ -416,7 +237,7 @@
 	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
 	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
 	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
-	at sqa.test.robustnessTesting.testRobustness(robustnessTesting.java:19)
+	at sqa.test.robustnessTesting.RobustnessTesting(robustnessTesting.java:19)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at java.base/java.util.Optional.ifPresent(Optional.java:178)
 	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
@@ -449,7 +270,7 @@
 
         </failure>
       </testcase>
-      <testcase name="testRobustness" classname="sqa.test.robustnessTesting" time="0.002" dynamicTest="true" displayname="[19] 50000, 4, 1001, Gold" parameters="int,int,int,java.lang.String" uniqueid="[engine:junit-jupiter]/[class:sqa.test.robustnessTesting]/[test-template:testRobustness(int, int, int, java.lang.String)]/[test-template-invocation:#19]">
+      <testcase name="RobustnessTesting" classname="sqa.test.robustnessTesting" time="0.002" dynamicTest="true" displayname="[12] 50000, 31, 500, Gold" parameters="int,int,int,java.lang.String" uniqueid="[engine:junit-jupiter]/[class:sqa.test.robustnessTesting]/[test-template:RobustnessTesting(int, int, int, java.lang.String)]/[test-template-invocation:#12]">
         <failure>
           <expected>Gold</expected>
           <actual>Silver</actual>
@@ -460,7 +281,186 @@
 	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
 	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
 	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
-	at sqa.test.robustnessTesting.testRobustness(robustnessTesting.java:19)
+	at sqa.test.robustnessTesting.RobustnessTesting(robustnessTesting.java:19)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+
+        </failure>
+      </testcase>
+      <testcase name="RobustnessTesting" classname="sqa.test.robustnessTesting" time="0.001" dynamicTest="true" displayname="[13] 50000, 32, 500, Gold" parameters="int,int,int,java.lang.String" uniqueid="[engine:junit-jupiter]/[class:sqa.test.robustnessTesting]/[test-template:RobustnessTesting(int, int, int, java.lang.String)]/[test-template-invocation:#13]">
+        <failure>
+          <expected>Gold</expected>
+          <actual>Silver</actual>
+          org.opentest4j.AssertionFailedError: expected: &lt;Gold&gt; but was: &lt;Silver&gt;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
+	at sqa.test.robustnessTesting.RobustnessTesting(robustnessTesting.java:19)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+
+        </failure>
+      </testcase>
+      <testcase name="RobustnessTesting" classname="sqa.test.robustnessTesting" time="0.001" dynamicTest="true" displayname="[14] 50000, 15, 0, Standard" parameters="int,int,int,java.lang.String" uniqueid="[engine:junit-jupiter]/[class:sqa.test.robustnessTesting]/[test-template:RobustnessTesting(int, int, int, java.lang.String)]/[test-template-invocation:#14]"/>
+      <testcase name="RobustnessTesting" classname="sqa.test.robustnessTesting" time="0.001" dynamicTest="true" displayname="[15] 50000, 15, 1, Standard" parameters="int,int,int,java.lang.String" uniqueid="[engine:junit-jupiter]/[class:sqa.test.robustnessTesting]/[test-template:RobustnessTesting(int, int, int, java.lang.String)]/[test-template-invocation:#15]"/>
+      <testcase name="RobustnessTesting" classname="sqa.test.robustnessTesting" time="0.0" dynamicTest="true" displayname="[16] 50000, 15, 2, Standard" parameters="int,int,int,java.lang.String" uniqueid="[engine:junit-jupiter]/[class:sqa.test.robustnessTesting]/[test-template:RobustnessTesting(int, int, int, java.lang.String)]/[test-template-invocation:#16]"/>
+      <testcase name="RobustnessTesting" classname="sqa.test.robustnessTesting" time="0.002" dynamicTest="true" displayname="[17] 50000, 15, 999, Gold" parameters="int,int,int,java.lang.String" uniqueid="[engine:junit-jupiter]/[class:sqa.test.robustnessTesting]/[test-template:RobustnessTesting(int, int, int, java.lang.String)]/[test-template-invocation:#17]">
+        <failure>
+          <expected>Gold</expected>
+          <actual>Silver</actual>
+          org.opentest4j.AssertionFailedError: expected: &lt;Gold&gt; but was: &lt;Silver&gt;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
+	at sqa.test.robustnessTesting.RobustnessTesting(robustnessTesting.java:19)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+
+        </failure>
+      </testcase>
+      <testcase name="RobustnessTesting" classname="sqa.test.robustnessTesting" time="0.001" dynamicTest="true" displayname="[18] 50000, 15, 1000, Gold" parameters="int,int,int,java.lang.String" uniqueid="[engine:junit-jupiter]/[class:sqa.test.robustnessTesting]/[test-template:RobustnessTesting(int, int, int, java.lang.String)]/[test-template-invocation:#18]">
+        <failure>
+          <expected>Gold</expected>
+          <actual>Silver</actual>
+          org.opentest4j.AssertionFailedError: expected: &lt;Gold&gt; but was: &lt;Silver&gt;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
+	at sqa.test.robustnessTesting.RobustnessTesting(robustnessTesting.java:19)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+
+        </failure>
+      </testcase>
+      <testcase name="RobustnessTesting" classname="sqa.test.robustnessTesting" time="0.001" dynamicTest="true" displayname="[19] 50000, 15, 1001, Gold" parameters="int,int,int,java.lang.String" uniqueid="[engine:junit-jupiter]/[class:sqa.test.robustnessTesting]/[test-template:RobustnessTesting(int, int, int, java.lang.String)]/[test-template-invocation:#19]">
+        <failure>
+          <expected>Gold</expected>
+          <actual>Silver</actual>
+          org.opentest4j.AssertionFailedError: expected: &lt;Gold&gt; but was: &lt;Silver&gt;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
+	at sqa.test.robustnessTesting.RobustnessTesting(robustnessTesting.java:19)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at java.base/java.util.Optional.ifPresent(Optional.java:178)
 	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
